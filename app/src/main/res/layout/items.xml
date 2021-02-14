@@ -15,7 +15,7 @@
 
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="300dp"
             android:elevation="10dp"
             android:padding="10dp">
 
@@ -37,9 +37,10 @@
                 android:layout_height="wrap_content"
                 android:elevation="8dp"
                 android:padding="10dp"
+                android:fontFamily="@font/fredoka"
                 android:text="TITLE"
                 android:textColor="@color/white"
-                android:textSize="14sp" />
+                android:textSize="16sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -52,6 +53,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="15"
+                    android:fontFamily="@font/fredoka"
                     android:gravity="left"
                     android:text="Source"
                     android:textColor="@color/white"
@@ -59,13 +61,14 @@
 
                 <TextView
                     android:id="@+id/tvDate"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:elevation="8dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:gravity="right"
+                    android:fontFamily="@font/fredoka"
                     android:text="Date"
+                    android:layout_marginRight="2dp"
                     android:textColor="@color/white"
-                    android:textSize="8dp" />
+                    android:textSize="10dp" />
             </LinearLayout>
         </FrameLayout>
     </androidx.cardview.widget.CardView>

@@ -14,8 +14,8 @@
         <activity android:name=".parameters.MainActivity">
 
         </activity>
-        <activity android:name=".Intro" />
         <activity android:name=".DetailedActivity" />
+
         <activity android:name=".Spalsh">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

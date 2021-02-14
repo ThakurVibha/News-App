@@ -11,7 +11,7 @@ import com.example.newsapp.parameters.MainActivity;
 
 public class Spalsh extends AppCompatActivity {
 
-    private static int SPLASH_SCREEN_TIME_OUT = 7000;
+    private static int SPLASH_SCREEN_TIME_OUT = 3000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

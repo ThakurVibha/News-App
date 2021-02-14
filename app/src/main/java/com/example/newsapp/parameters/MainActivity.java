@@ -4,16 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.example.newsapp.Adapter;
 import com.example.newsapp.ApiClient;
-import com.example.newsapp.Intro;
 import com.example.newsapp.R;
 
 import java.util.ArrayList;

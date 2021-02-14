@@ -4,97 +4,101 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="10dp"
     android:orientation="vertical"
     tools:context=".DetailedActivity">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:id="@+id/cardView"
                 android:layout_margin="10dp"
-                app:cardElevation="4dp"
-                app:cardCornerRadius="4dp">
+                android:padding="10dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="4dp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
+
                     <FrameLayout
                         android:layout_width="match_parent"
-                        android:padding="10dp"
-                        android:layout_height="250dp">
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:src="@drawable/image"
-                            android:scaleType="centerCrop"
-                            android:id="@+id/image"/>
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
+                        android:layout_height="250dp"
+                        android:padding="10dp">
 
-                            android:background="@drawable/gradient"/>
+                        <ImageView
+                            android:id="@+id/image"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/image" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/gradient" />
+
                         <TextView
+                            android:id="@+id/tvId"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="TITLE"
-                            android:textSize="12dp"
+                            android:layout_height="22dp"
+                            android:fontFamily="@font/fredoka"
                             android:padding="10dp"
+                            android:text="TITLE"
                             android:textColor="@color/white"
-                            android:id="@+id/tvId"/>
+                            android:textSize="12dp" />
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="bottom"
                             android:orientation="horizontal">
-                            <TextView
-                                android:gravity="left"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Source"
-                                android:textSize="8dp"
-                                android:ems="15"
-                                android:textColor="@color/white"
-                                android:id="@+id/tvSource"/>
-                            <TextView
-                                android:gravity="right"
 
+                            <TextView
+                                android:id="@+id/tvSource"
+                                android:layout_width="wrap_content"
+                                android:layout_height="22dp"
+                                android:ems="15"
+                                android:layout_marginRight="5dp"
+                                android:fontFamily="@font/fredoka"
+                                android:text="Source"
+                                android:textColor="@color/white"
+                                android:textSize="8dp" />
+
+                            <TextView
+                                android:id="@+id/tvDate"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:fontFamily="@font/fredoka"
+                                android:gravity="right"
                                 android:text="Date"
-                                android:textSize="16dp"
                                 android:textColor="@color/white"
-                                android:id="@+id/tvDate"/>
+                                android:textSize="16dp" />
                         </LinearLayout>
                     </FrameLayout>
+
                     <TextView
+                        android:id="@+id/tvDesc"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Description"
                         android:padding="5dp"
-                        android:textColor="#e64037"
-                        android:id="@+id/tvDesc"/>
+                        android:text="Description"
+                        android:textColor="#e64037" />
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
-            <com.airbnb.lottie.LottieAnimationView
-                android:id="@+id/animation_view"
-                android:layout_width="300dp"
-                android:layout_height="200dp"
-                android:layout_alignParentStart="true"
-                android:layout_centerInParent="true"
-                android:layout_marginStart="14dp"
-                android:layout_marginTop="8dp"
-                app:lottie_autoPlay="true"
-                app:lottie_fileName="world.json"
-                app:lottie_loop="true" />
+
+
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
